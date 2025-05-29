@@ -1,0 +1,53 @@
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+*.ids
+*.releaseBackup
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.project
+.classpath
+.settings/
+nbproject/
+*.sublime-workspace
+*.sublime-project
+
+# Log files
+*.log
+logs/
+
+# Local environment files (if any)
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# MinIO and PostgreSQL data (from Docker volumes - these should NOT be committed)
+# If your volumes are mapped inside your project dir (not recommended for data),
+# make sure to ignore them. Our current setup uses named volumes, so they are outside.
+
+# Python producer cache/venv
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
